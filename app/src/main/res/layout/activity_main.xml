@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCAN"
+        android:layout_below="@+id/tvResult"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnWrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kiír"
+        android:layout_below="@+id/btnScan"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnShowCoords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Koordináták"
+        android:layout_below="@+id/btnWrite"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/ivShowQrCode"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/btnShowCoords"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="qrCode" />
+
+    <!--<TextView
+        android:id="@+id/tvSaveLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />-->
+
+
+</RelativeLayout>
